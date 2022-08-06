@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Raleway&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <section id="heading">
+            <h1>Wedding Invitation Designer</h1>
+        </section>
+    </header>
+    <main>
+        <section class="textarea">
+            <nav>
+                <ul>
+                    <li id="artist">Artist</li>
+                    <li id="vintage">Vintage</li>
+                    <li id="star">Star Night</li>
+                </ul>
+            </nav>
+            <form>
+                <div class="formItem">
+                    <label for="firstName">1st Name: </label>
+                    <input type="text" name="firstName" id="firstName" >
+                    <br>
+                </div>
+                <div class="formItem">
+                    <label for="secondName">2nd Name: </llabel>
+                    <input type="text" name="secondName" id="secondName" >
+                    <br>
+                </div>
+                <div class="formItem">
+                    <label for="lastName">Last Name: </label>
+                    <input type="text" name="lastName" id="lastName" >
+                    <br>
+                </div>
+                <div class="formItem">
+                    <label for="date">Date: </label>
+                    <input type="text" name="date" id="date">
+                    <br>
+                </div>
+                <div class="formItem">
+                    <label for="location">Wedding Location: </label>
+                    <input type="text" name="location" id="location" >
+                    <br>
+                </div>
+            </form>
+        </section>
+        
+        <section class="display">
+            <div id="display">
+                <div class="image-container">
+                  <img src="images/pawel-czerwinski-NJdfP9AlPjc-unsplash.jpg">
+                </div>
+                <div class="initial">
+                   <p id="initial"><span id=firstLetter1></span><span id=firstLetter2></span></p> 
+                </div>
+                <div id="greeting">
+                    <p>You are cordially invited to the wedding of</p>
+                </div>
+                <div class="firstNames">
+                    <p id="firstNames"><span id='name1'></span><span id='name2'></span></p>
+                </div>
+                <div class="lastName1">
+                    <p id="lastName1"></p>
+                </div>
+                <div class="date1">
+                    <p id="date1"></p>
+                </div>
+                <div class="location1">
+                    <p id="location1"></p>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    <footer>
+
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

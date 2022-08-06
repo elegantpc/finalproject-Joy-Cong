@@ -1,0 +1,194 @@
+html,body,h1,ul,li{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+p,span{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    opacity: 0.8;
+}
+nav{
+    border-bottom: solid 2px darkgrey;
+    
+
+}
+h1{
+    font-size: 3.5rem;
+    font-family: 'Lobster', cursive;
+    opacity: 0.7;
+}
+label{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+ul{
+    justify-content: center;
+    margin: 0 auto;
+    display: flex;
+    list-style: none;
+
+}
+li{
+   padding: 1.5rem 3rem; 
+   font-family:'Raleway', sans-serif;
+   font-weight: bold;
+   font-size: 1.5rem;
+   cursor: pointer;
+}
+li:hover{
+    background-color: beige;
+}
+header{
+    text-align: center;
+    width: 100rem;
+    margin: 0 auto;
+}
+#heading{
+   padding: 3rem;
+}
+
+body{
+    background-image:url('images/wijdan-mq-H5yiRXDUkto-unsplash.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+main{
+    display: flex;
+    width: 100rem;
+    height: 1000px;
+    margin: 0 auto;
+}
+header{
+    text-align: center;
+    width: 100rem;
+    margin: 0 auto;
+}
+#heading{
+  padding: 3rem;
+}
+.textarea{
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    
+    background-image: url('images/kelly-neil-eZX1D12IS9w-unsplash.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    width: 50%;
+    height:950px;
+}
+
+.formItem{
+    width: 50%;
+    margin: 2rem auto;
+    
+}
+
+input{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    width: 100%;
+    height: 3rem;
+    border: solid 2px pink;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+/* end of the text area */
+
+.display{
+    width: 45%;
+    margin: 0 auto;
+}
+
+#display{
+    width: 100%;
+    overflow: hidden;
+    height: 950px;
+    margin: 0 auto;
+}
+
+.image-container{
+    position: absolute;
+    width: 40%;
+    height: 950px;
+    overflow: hidden;
+}
+.image-container img{
+    display: block;
+    max-width: 100%;  
+    
+} 
+
+#greeting{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.8rem;
+    text-align: center;
+    font-style: italic;
+    position: relative;
+    top:180px; 
+   
+    
+
+}
+
+.initial{
+    height: 50px;
+    /* margin:100px 30px 20px; */
+    font-size: 4rem;
+    text-align: center;
+    position: relative;
+    top: 120px; 
+} 
+
+.firstNames{
+    position:relative;
+    top: 180px;
+    text-align: center;
+    font-size: 3rem;
+
+}
+.lastName1{
+    position: relative;
+    top: 190px;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.date1{
+    position: relative;
+    top: 250px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.location1{
+    position: relative;
+    top: 250px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* change style */
+.changeOfFont1{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    opacity: 0.8;
+
+}
+.changeOfFont2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    opacity: 0.8;
+}
+.changeOfFont3{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    opacity: 0.8;
+}
+
+
+
+
