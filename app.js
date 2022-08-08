@@ -85,65 +85,93 @@ const para= document.getElementsByTagName('p')
 const spans= document.getElementsByTagName('span')
 
 
-// vintage change of font
 
-function changeOfFont1(){
+let arr = ['change1','change2','change3']
+let arrFont=['font1','font2','font3']
+const listItems = document.getElementsByTagName('li')
+const displayArea=document.getElementById('display')
+    for(let i=0; i<listItems.length;i++){
+         listItems[i].setAttribute('index', i)
+     }  
 
-   for(let i=0; i<para.length; i++){
-       para[i].setAttribute("class", "changeOfFont1")
-       spans[i].setAttribute("class", "changeOfFont1")
-   }
- }
-
-vintageStyle.addEventListener('click', changeOfFont1)
-
-function changeOfFont2(){
-
-    for(let i=0; i<para.length; i++){
-   
-           para[i].className="changeOfFont2"
-           spans[i].className="changeOfFont2"
+     function changeOfBackground(){ 
+           let index = this.getAttribute('index')
+            let newClass= arr[index]
+            displayArea.setAttribute('class', newClass)
+            
         }
-    }
-   
-   
-   starStyle.addEventListener('click', changeOfFont2)
-   
-   
-   function changeOfFont3(){
-   
+
+    function changeFont(){
+        let index=this.getAttribute('index')
+        let newFont = arrFont[index]
         for(let i=0; i<para.length; i++){
-            para[i].className="changeOfFont3"
-            spans[i].className="changeOfFont3"
+               para[i].setAttribute("class", newFont)
+                spans[i].setAttribute("class", newFont)
+             }
+         }
+    
+        
+            for(let i=0; i<listItems.length;i++){
+            listItems[i].addEventListener('click', changeOfBackground)
+            listItems[i].addEventListener('click', changeFont)
         }
-    }
+// function changeOfFont1(){
+
+//    for(let i=0; i<para.length; i++){
+//        para[i].setAttribute("class", "changeOfFont1")
+//        spans[i].setAttribute("class", "changeOfFont1")
+//    }
+//  }
+
+// vintageStyle.addEventListener('click', changeOfFont1)
+
+// function changeOfFont2(){
+
+//     for(let i=0; i<para.length; i++){
    
-    artistStyle.addEventListener('click', changeOfFont3)
+//            para[i].className="changeOfFont2"
+//            spans[i].className="changeOfFont2"
+//         }
+//     }
+   
+   
+//    starStyle.addEventListener('click', changeOfFont2)
+   
+   
+//    function changeOfFont3(){
+   
+//         for(let i=0; i<para.length; i++){
+//             para[i].className="changeOfFont3"
+//             spans[i].className="changeOfFont3"
+//         }
+//     }
+   
+//     artistStyle.addEventListener('click', changeOfFont3)
 
 // change of background
-const listItems = document.getElementsByTagName('li')
-const displayArea=document.getElementsByClassName('display')
+// const listItems = document.getElementsByTagName('li')
+// const displayArea=document.getElementsByClassName('display')
 
-let arr = ['images/pawel-czerwinski-NJdfP9AlPjc-unsplash.jpg','images/annie-spratt-X4l3CjcDvic-unsplash.jpg','images/evelina-friman-hw_sKmjb0ns-unsplash.jpg']
+// let arr = ['images/pawel-czerwinski-NJdfP9AlPjc-unsplash.jpg','images/annie-spratt-X4l3CjcDvic-unsplash.jpg','images/evelina-friman-hw_sKmjb0ns-unsplash.jpg']
 
     
-for(let i=0; i<listItems.length;i++){
-    listItems[i].setAttribute('index', i)
-    }     
+// for(let i=0; i<listItems.length;i++){
+//     listItems[i].setAttribute('index', i)
+//     }     
 
 
-function changeOfBackground(){ 
-    const card=document.querySelector('img')
-    let index = this.getAttribute('index')
-    console.log(index)
-    let srcName= arr[index]
-    console.log(srcName)
-    card.src=srcName   
-}
+// function changeOfBackground(){ 
+//     const card=document.querySelector('img')
+//     let index = this.getAttribute('index')
+//     console.log(index)
+//     let srcName= arr[index]
+//     console.log(srcName)
+//     card.src=srcName   
+// }
 
-    for(let i=0; i<listItems.length;i++){
-    listItems[i].addEventListener('click', changeOfBackground)
-}
+//     for(let i=0; i<listItems.length;i++){
+//     listItems[i].addEventListener('click', changeOfBackground)
+// }
 
 
 

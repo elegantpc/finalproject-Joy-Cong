@@ -5,10 +5,10 @@ html,body,h1,ul,li{
     box-sizing: border-box;
     
 }
-p,span{
+/* p,span{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     opacity: 0.8;
-}
+} */
 nav{
     border-bottom: solid 2px darkgrey;
     
@@ -101,15 +101,22 @@ input{
 }
 /* end of the text area */
 
-.display{
+#displayArea{
+    background-image: url('images/pawel-czerwinski-NJdfP9AlPjc-unsplash.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  
     width: 45%;
     margin: 0 auto;
-}
+    height: 950px;
+    overflow:hidden;
+} 
 
 #display{
-    width: 100%;
+    margin: 0 auto;
+    width: 100%; 
     overflow: hidden;
-    height: 950px;
+    height: 950px; 
     margin: 0 auto;
 }
 
@@ -119,14 +126,10 @@ input{
     height: 950px;
     overflow: hidden;
 }
-.image-container img{
-    display: block;
-    max-width: 100%;  
-    
-} 
+
 
 #greeting{
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1.8rem;
     text-align: center;
     font-style: italic;
@@ -175,17 +178,37 @@ input{
 }
 
 /* change style */
-.changeOfFont1{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    opacity: 0.8;
+.change1{
+    background-image: url('images/pawel-czerwinski-NJdfP9AlPjc-unsplash.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
 }
-.changeOfFont2{
+.font1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    opacity: 0.8;
+}
+
+.change2{
+    background-image: url('images/evelina-friman-hw_sKmjb0ns-unsplash.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.font2{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     opacity: 0.8;
 }
-.changeOfFont3{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+.change3{
+    background-image: url('images/annie-spratt-X4l3CjcDvic-unsplash.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.font3{
+    font-family:Georgia, 'Times New Roman', Times, serif;
     opacity: 0.8;
 }
 
